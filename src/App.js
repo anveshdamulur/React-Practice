@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { ParentClass } from './Parentchild/ParentClass';
+import { ChildParent } from './ChildtoParent/ChildParent'
+import { ChildtoChild } from './ChildtoChild/ChildtoChild';
+import { Events } from './Events/Events';
+import { AxiosCall } from './ApiCallAxios/AxiosCall';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Welcome to react class</h1>
+        <ParentClass />
+        <ChildParent />
+        <ChildtoChild />
+        <Events />
+        <AxiosCall/>
     </div>
   );
 }
